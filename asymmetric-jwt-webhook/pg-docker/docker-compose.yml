@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:9.6
+    volumes:
+      - ./init/roles.sql:/docker-entrypoint-initdb.d/01-roles.sql
+      - ./init/db.sql:/docker-entrypoint-initdb.d/02-init.sql
+      - ./init/users.sql:/docker-entrypoint-initdb.d/03-users.sql
+      - ./init/address.sql:/docker-entrypoint-initdb.d/04-address.sql
+      - ./init/public_keys.sql:/docker-entrypoint-initdb.d/05-public_keys.sql
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=johndoe
+      - POSTGRES_PASSWORD=p4ssw0rd

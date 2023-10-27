@@ -3,7 +3,7 @@ autopep8==1.6.0
 cffi==1.15.0
 click==8.0.3
 colorama==0.4.4
-cryptography==3.4.8
+cryptography==41.0.5
 DateTime==4.4
 ecdsa==0.17.0
 Flask==2.0.3
@@ -28,6 +28,6 @@ SQLAlchemy==1.4.31
 toml==0.10.2
 typing_extensions==4.1.1
 uuid==1.30
-Werkzeug==2.0.3
+Werkzeug==3.0.1
 wrapt==1.13.3
 zope.interface==5.4.0

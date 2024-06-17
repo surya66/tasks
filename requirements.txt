@@ -3,7 +3,7 @@ autopep8==1.6.0
 cffi==1.15.0
 click==8.0.3
 colorama==0.4.4
-cryptography==3.4.8
+cryptography==42.0.8
 DateTime==4.4
 ecdsa==0.17.0
 Flask==2.0.3

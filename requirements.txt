@@ -31,3 +31,4 @@ uuid==1.30
 Werkzeug==2.0.3
 wrapt==1.13.3
 zope.interface==5.4.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
